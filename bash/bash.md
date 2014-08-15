@@ -108,6 +108,8 @@ Have a file on rancor you want on your local computer?
 
 `scp username@rancor.csh.rit.edu:remotefile .`
 
+Note: when copying to a remote machine, that `:` at the end is _necessary_!
+
 ## Editing text files
 
 If you don't know how to use a real editor, for now you can use `nano filename`.

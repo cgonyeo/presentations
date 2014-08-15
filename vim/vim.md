@@ -48,13 +48,13 @@ the center of the keyboard, and means you can work more comfortably and faster.
 
 ## Delete (cut) a line
 
-Want to delete a line? That's done with the `d` key. Move your cursor to the
-right line, and press `dd`.
+Want to delete a line? That's done with the `d` key. Move your cursor to a line
+you don't want anymore, and press `dd`.
 
 ## Put (paste) a line
 
-Let's put that line you just took somewhere else. Put the cursor somewhere, and
-press `p`.
+Let's put that line you just deleted somewhere else. Put the cursor somewhere,
+and press `p`.
 
 ## Yank (copy) a line 
 
@@ -70,7 +70,7 @@ times? Type in `10` and then hit one of the movement keys.
 
 The first `d` means "delete", the second `d` means "this line". You can give it
 other commands, for example `d5j` will delete the current line and 5 lines below
-it. This also applies to yanking and putting.
+it. This also applies to yanking.
 
 # Visual Mode
 
@@ -217,3 +217,11 @@ on the screen at the same time.
 - `Ctrl` + `w` and then `hjkl` will move between the splits
 - `:e` is "edit a file". Type in `:e path/to/file` in a split and it'll open the
   file there.
+
+## Edit remote file
+
+If you have ssh access to a machine you can do:
+
+`vim scp://username@machine/path/to/file`
+
+Kudos to Ethan House for showing me this
