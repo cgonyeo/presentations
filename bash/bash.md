@@ -92,6 +92,12 @@ monitor.
 
 # Let's do real things
 
+## Find a file
+
+Let's say you want to find the file `tits.jpg`. It's somewhere under your home
+directory, but you don't know where. Go to the folder you want to search in, and
+type the command `find . -name tits.jpg`
+
 ## Downloading
 
 Want to download a file to your current directory? 
@@ -160,7 +166,7 @@ whenever.
 You can also watch a full movie from the terminal! Just type in `telnet
 towel.blinkenlights.nl`
 
-# Accounts and Permissions
+# Permissions
 
 ## File permissions
 
@@ -203,3 +209,48 @@ chmod stands for change mode, or change file mode bits.
 
 The execute flag means you can run the file as if it's a program, or `cd` into
 the directory if it's a directory.
+
+## root
+
+On every Linux system, there's a root account. This account has the power to do
+whatever it wants. Permissions settings won't keep it out, it can mess with
+anyone's files, and has access to everything. This account is often used to
+install software, and manage system services. Many distributions are set up to
+allow you to run a command as this user with the `sudo` command.
+
+# Redirection
+
+## Pipes
+
+In Linux when a program goes to print something to the screen, you can instead
+send it's output directly into another program. This is useful for filtering out
+long lists, logging the results of a program, and for many other things.
+
+In Linux, we can connect programs together with the `|` symbol.
+
+## `grep`
+
+`curl` is just like the `wget` command we saw earlier, except it prints out what
+it downloads instead of saving it into a file. So let's try `curl -s
+http://www.pornhub.com/`. That's a lot of text. I wonder if they use jquery...
+
+`curl -s http://www.pornhub.com/ | grep jquery`
+
+## `>`
+
+How about if you want to send a program's output to a file? The `>` symbol will
+write whatever it gets into a file. So to emulate what wget does:
+
+`curl -s http://www.pornhub.com/ > pornhub.html`
+
+## `>>`
+
+The `>` symbol will delete whatever was previously in the file it's writing to.
+If you want to instead append to a file, use `>>`.
+
+## stderr
+
+When a program prints to the screen, it can do so via stdout or stderr. The pipe
+and redirects I've shown you will grab stdout, and ignore stderr. If you want to
+grab just stderr, or both, or send stderr to stdout, or other fanciness, I'll
+leave that for you guys to look up on your own.
