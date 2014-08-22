@@ -14,7 +14,7 @@ seminar let's all go use vim on rancor. If you have a Linux or Apple machine,
 just do this from terminal. If you have a windows machine, you'll need to go
 grab putty or something.
 
-- `ssh USERNAME@rancor.csh.rit.edu`
+- `ssh $USERNAME@rancor.csh.rit.edu`
 - `vim testfile.txt`
 
 ## Go into insert mode
@@ -92,7 +92,8 @@ a time, instead of characters.
 
 Press `/` and then enter in your search query. When you press enter, you'll be
 taken to the next occurrence of the search. You can press `n` to go to the next
-occurrence, and keep going until you find what you want.
+occurrence, or `N` to go to the previous, and keep going until you find what you
+want.
 
 ## Search backwards
 
@@ -123,6 +124,8 @@ visual mode would be silly, so you can do this: `:%s/foo/bar`
 - The first part here is still a regular expression
 - It'll only replace the first occurrence it finds on each line. To replace
   more, add `/g` on to the end of it
+- The `/` character can actually be anything. You just need to escape that
+  character in your searches and replaces.
 
 # `:`
 
@@ -156,7 +159,8 @@ the screen.
 ## Quit vim
 
 I don't know why you'd ever do this, but you can enter in `:q` and hit `Enter`
-to quit vim. For added convenience, `:wq` will save the file and exit.
+ton quit vim. For added convenience, `:x` will save the file and exit. If you
+want to quit vim without saving the file, use `:q!`
 
 # More Learning
 
@@ -206,7 +210,9 @@ it, I'll cover window splits in a bit.
 - `s` in visual mode will delete the text you have selected and put you in
   insert mode
 - `w` and `e` will jump to the next word (they jump to different locations)
+- `b` will jump back a word
 - `:` + a number will move the cursor to that line number
+- `Shift` + `g` will go to the bottom of the file. `gg` will go to the top.
 
 ## Window splits
 

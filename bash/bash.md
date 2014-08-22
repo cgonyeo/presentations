@@ -39,11 +39,11 @@ you're in, the `~` will be replaced with where you are.
 Let's interact with some files!
 
 - `ls` will list all the files for you in the folder you're in
+- `cd Pictures` will change directories into the Pictures folder in the current
+  folder. Now `ls` will show you different files!
 - `mv file1 file2` will move file1 into file2. This can be used to change where
   something is, or rename a file. This will overwrite whatever file2 was.
 - `cp file1 file2` will copy file1 to file2. This will also overwrite file2.
-- `cd Pictures` will change directories into the Pictures folder in the current
-  folder. Now `ls` will show you different files!
 
 ## Shortcuts
 
@@ -204,8 +204,9 @@ chmod stands for change mode, or change file mode bits.
 
  - 777: everyone can do everything
  - 700: only you can read, write, or execute the file
- - 755: you can do anything with file, others can only read from it
+ - 755: you can do anything with file, others can read and execute
  - 600: only you can read or write to the file
+ - 644: you can read or write to the file, others can read the file
 
 The execute flag means you can run the file as if it's a program, or `cd` into
 the directory if it's a directory.
@@ -223,7 +224,7 @@ allow you to run a command as this user with the `sudo` command.
 ## Pipes
 
 In Linux when a program goes to print something to the screen, you can instead
-send it's output directly into another program. This is useful for filtering out
+send its output directly into another program. This is useful for filtering out
 long lists, logging the results of a program, and for many other things.
 
 In Linux, we can connect programs together with the `|` symbol.
