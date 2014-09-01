@@ -1,4 +1,4 @@
-% How to bash
+% How to terminal
 % Derek Gonyeo
 
 # The command line
