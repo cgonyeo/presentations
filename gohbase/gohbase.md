@@ -6,6 +6,12 @@
 
 _~ hbase.apache.org_
 
+## Starting gohbase
+
+Project started on April 25th by Benoit (author of OpenTSDB):
+
+![](https://avatars1.githubusercontent.com/u/128281?v=3&s=400)
+
 # HBase Architecture
 
 ##
@@ -15,12 +21,6 @@ _~ hbase.apache.org_
 ## 
 
 <img src="http://www.n10k.com/assets/2013-05-29-hbase-for-architects-logdata_high.jpg" style="height:600px;width:800px;"></img>
-
-## Starting gohbase
-
-Project started on April 25th by Benoit (author of OpenTSDB):
-
-![](https://avatars1.githubusercontent.com/u/128281?v=3&s=400)
 
 # gohbase Architecture
 
